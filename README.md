@@ -11,12 +11,6 @@
 - 🔥 练习热力图
 - 🎯 每日目标追踪
 
-## 截图
-
-| 首页 | 计时器 | 视频列表 | 统计 |
-|------|--------|----------|------|
-| ![Home](screenshots/home.png) | ![Timer](screenshots/timer.png) | ![Videos](screenshots/videos.png) | ![Stats](screenshots/stats.png) |
-
 ## 技术栈
 
 - **框架**: Flutter 3.4+
@@ -65,8 +59,8 @@ lib/
 ├── models/         # 数据模型
 ├── screens/        # 界面页面
 ├── services/       # 云端和数据库服务
-├── utils/         # 工具类
-└── widgets/       # 通用组件
+├── utils/          # 工具类
+└── widgets/        # 通用组件
 ```
 
 ## 许可证
