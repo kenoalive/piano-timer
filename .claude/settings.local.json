@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd //c \"rd /s /q C:\\\\Users\\\\14753\\\\.gradle\\\\wrapper\\\\dists\\\\gradle-7.6.3-all\\\\aocdy2d2z8kodnny3rsumj8i8\")",
+      "Bash(powershell -Command \"Get-Process -Name ''java'',''studio'',''gradle'' -ErrorAction SilentlyContinue | Stop-Process -Force; Start-Sleep -Seconds 2\")",
+      "Bash(flutter clean:*)",
+      "Bash(flutter pub:*)",
+      "Bash(flutter build:*)",
+      "Bash(powershell -Command \"Get-Process -Name ''java'',''studio'',''gradle'',''flutter'' -ErrorAction SilentlyContinue | Stop-Process -Force\")",
+      "Bash(flutter analyze:*)",
+      "WebFetch(domain:docs.cloudbase.net)"
+    ]
+  }
+}
