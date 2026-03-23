@@ -18,11 +18,11 @@ class CloudService {
   final NetworkService _network;
   final _uuid = const Uuid();
 
-  // 腾讯云配置 - 请确保这些配置正确
-  static const String _envId = 'demo-2gfsa2kw90af0ee7';
+  // 腾讯云配置 - 请替换为你的实际配置
+  static const String _envId = 'YOUR_ENV_ID';
   // SecretId 和 SecretKey 保留备用，当前使用 HTTP 触发器方式
-  // static const String _secretId = 'AKIDZzBb1DBvRjmbVRWYREqIbltx5FJKsMm8';
-  // static const String _secretKey = 'Ohw9LVdigYL3gDf3b2MYXJrCKGyUt5Ui';
+  // static const String _secretId = 'YOUR_SECRET_ID';
+  // static const String _secretKey = 'YOUR_SECRET_KEY';
 
   bool _isInitialized = false;
   bool _isSyncing = false;
