@@ -1,74 +1,74 @@
-# Piano Timer 🎹
+# 琴时 (Piano Timer) 🎹
 
-A Flutter application for tracking piano practice time, with video recording, cloud sync, and statistics.
+一款用于记录钢琴练习时间的 Flutter 应用，支持视频录制、云端同步和统计分析。
 
-## Features
+## 功能特点
 
-- ⏱️ Practice timer with start/pause/stop
-- 📹 Video recording and upload (up to 9 videos per session)
-- ☁️ Cloud sync (Tencent CloudBase)
-- 📊 Practice statistics (weekly/monthly/yearly charts)
-- 🔥 Practice heatmap
-- 🎯 Daily goal tracking
+- ⏱️ 练习计时器（开始/暂停/停止）
+- 📹 视频录制和上传（每次练习最多9个视频）
+- ☁️ 云端同步（腾讯云 CloudBase）
+- 📊 练习统计数据（周/月/年图表）
+- 🔥 练习热力图
+- 🎯 每日目标追踪
 
-## Screenshots
+## 截图
 
-| Home | Timer | Videos | Statistics |
-|------|-------|--------|------------|
+| 首页 | 计时器 | 视频列表 | 统计 |
+|------|--------|----------|------|
 | ![Home](screenshots/home.png) | ![Timer](screenshots/timer.png) | ![Videos](screenshots/videos.png) | ![Stats](screenshots/stats.png) |
 
-## Tech Stack
+## 技术栈
 
-- **Framework**: Flutter 3.4+
-- **Language**: Dart
-- **State Management**: flutter_bloc
-- **Local Database**: sqflite + shared_preferences
-- **Cloud**: Tencent CloudBase
-- **Video**: video_player + chewie
-- **Charts**: fl_chart
+- **框架**: Flutter 3.4+
+- **语言**: Dart
+- **状态管理**: flutter_bloc
+- **本地数据库**: sqflite + shared_preferences
+- **云服务**: 腾讯云 CloudBase
+- **视频播放**: video_player + chewie
+- **图表**: fl_chart
 
-## Getting Started
+## 快速开始
 
-### Prerequisites
+### 环境要求
 
 - Flutter 3.4+
-- Android SDK / Xcode (for iOS)
-- Tencent CloudBase account
+- Android SDK / Xcode (iOS 开发)
+- 腾讯云 CloudBase 账号
 
-### Installation
+### 安装步骤
 
 ```bash
-# Clone the repository
+# 克隆仓库
 git clone https://github.com/kenoalive/piano-timer.git
 cd piano-timer
 
-# Get dependencies
+# 获取依赖
 flutter pub get
 
-# Run
+# 运行
 flutter run
 ```
 
-### Configuration
+### 配置
 
-1. Create a Tencent CloudBase environment
-2. Update `lib/services/cloud_service.dart` with your configuration:
+1. 创建腾讯云 CloudBase 环境
+2. 修改 `lib/services/cloud_service.dart` 配置：
    ```dart
    static const String _envId = 'your-env-id';
    ```
 
-## Project Structure
+## 项目结构
 
 ```
 lib/
-├── blocs/          # BLoC state management
-├── models/         # Data models
-├── screens/        # UI screens
-├── services/       # Cloud & database services
-├── utils/          # Utilities
-└── widgets/        # Reusable widgets
+├── blocs/          # BLoC 状态管理
+├── models/         # 数据模型
+├── screens/        # 界面页面
+├── services/       # 云端和数据库服务
+├── utils/         # 工具类
+└── widgets/       # 通用组件
 ```
 
-## License
+## 许可证
 
 MIT License
